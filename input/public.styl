@@ -1,0 +1,200 @@
+﻿@import "reset.css";
+/*@import "function.css";*/
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";  
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+
+.w{max-width: 1340px;width: 100%;margin: 0 auto;}
+body{
+	font-size: 100%;
+}
+
+.first-page
+	position relative
+	.bg
+		height 980px
+		background url() center center no-repeat
+	.layout-first
+	.layout-second
+	.layout-three
+		position absolute
+		left 50%
+		top 0
+		img
+			display block
+	.layout-first
+		margin-top 160px
+		margin-left -535px
+	.layout-second
+		margin-left 61px
+		margin-top 280px
+	.layout-three
+		margin-left -426px
+		margin-top 730px
+.second-page
+	position relative
+	max-width 1920px
+	width 100%
+	margin 0 auto
+	background #000
+	video
+		display block
+		width 100%
+		// height 998px
+	// .layout
+	// 	position absolute
+	// 	top 0
+	// 	left 0
+	// 	right 0
+	// 	bottom 0
+	// 	pointer-events none
+	// 	background url(../img/hico9.png) center center/cover no-repeat
+.three-page
+	.title
+		padding 38px 0 16px
+		img
+			display block
+			margin 0 auto
+			max-width 469px
+			width 100%
+	.full-scroll
+		position relative
+		overflow hidden
+		.content
+			position relative
+			width 1200px
+			margin 0 auto
+			.arrow-left
+				position absolute
+				top 50%
+				margin-top -44px
+				left -54px
+				width 54px
+				height 88px
+				background url(../img/hico10.png) center center no-repeat
+				z-index 3
+			.arrow-right
+				position absolute
+				top 50%
+				margin-top -44px
+				right -54px
+				width 54px
+				height 88px
+				background url(../img/hico11.png) center center no-repeat
+				z-index 3
+			.swiper-container
+				width 100%
+				overflow visible
+			.cover-left
+				position absolute
+				left -2000px
+				top 0
+				bottom 0
+				width 2000px
+				background rgba(255,255,255,0.6)
+				z-index 2
+			.cover-right
+				position absolute
+				right -2000px
+				top 0
+				bottom 0
+				width 2000px
+				background rgba(255,255,255,0.6)
+				z-index 2
+			.pic
+				position relative
+				&>img
+					display block
+					width 100%
+				.icon
+					position absolute
+					top 70%
+					left 50%
+					margin-left -60px
+					img
+						display block
+						width 120px
+			.text
+				padding 20px
+				height 80px
+				background #665672
+				color #fff
+				h3
+					font-size 26px
+				p
+					font-size 22px
+		.bg-layout
+			position absolute
+			left 0
+			top 0
+			right 0
+			bottom 0
+			background rgba(0,0,0,0.5)
+			z-index 3
+			display none
+		.layout-box.active
+			.detalis
+				transform translate(-50%, -50%)
+				opacity 1
+			.bg-layout
+				display block
+		.detalis
+			position fixed
+			top 50%
+			left 50%
+			opacity 0
+			transition 0.3s;
+			transform translate(-50%, -100%)
+			z-index 3
+			width 500px
+			height 750px
+			box-sizing border-box
+			padding 60px
+			background url(../img/hico32.png) center center/100% 100% no-repeat
+			.arrow-left
+				position absolute
+				top 50%
+				margin-top -44px
+				left -100px
+				width 54px
+				height 88px
+				background url(../img/hico27.png) center center no-repeat
+			.arrow-right
+				position absolute
+				top 50%
+				margin-top -44px
+				right -100px
+				width 54px
+				height 88px
+				background url(../img/hico28.png) center center no-repeat
+			.layout
+				position absolute
+				z-index 1
+				top 0
+				bottom 0
+				left 0
+				right 0
+				background url(../img/hico30.png) center center/93% 93% no-repeat
+			.close
+				position absolute
+				right 30px
+				top 40px
+				z-index 1
+			.swiper-slide
+				img
+					display block
+					width 100%
+				
+	.scroll-content
+		padding 10px 0
+		text-align center
+		font-size 20px
+		color #fff
+		line-height 2
+		background url(../img/hico26.png) center center/auto 100% no-repeat
+	
