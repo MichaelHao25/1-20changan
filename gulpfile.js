@@ -88,20 +88,20 @@ gulp.task('css', function() {
         //  unitPrecision:5,
         //   propWhiteList: []
         // }),
-    // pxtorem({
-    //     rootValue: 100,
-    //     replace: true,
-    //     unitPrecision: 5,
-    //     propList: ['*', '!border*'],
-    // }),
+        // pxtorem({
+        //     rootValue: 100,
+        //     replace: true,
+        //     unitPrecision: 5,
+        //     propList: ['*', '!border*'],
+        // }),
         // wap
-    // pxtorem({
-    //     rootValue: 20,
-    //     replace: false,
-    //     unitPrecision: 5,
-    //     propList: ['*', '!border']
-    //     // propList需要进行pxtorem进行转换的元素“*”代表所有的
-    // }),
+        // pxtorem({
+        //     rootValue: 20,
+        //     replace: false,
+        //     unitPrecision: 5,
+        //     propList: ['*', '!border']
+        //     // propList需要进行pxtorem进行转换的元素“*”代表所有的
+        // }),
         // bootstrap
         // atImport,
         // mqpacker,
@@ -194,5 +194,5 @@ gulp.task('jpgpng', function() {
         .pipe(smushit({
             "verbose": true
         }))
-        .pipe(gulp.dest('./img/dist/'));
+        .pipe(gulp.dest('./img/compress/'));
 });
