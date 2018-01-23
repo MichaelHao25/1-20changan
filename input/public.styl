@@ -8,12 +8,69 @@ background:rgba(255,255,255,.8);
 
 
 filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
-
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 .w{max-width: 1340px;width: 100%;margin: 0 auto;}
+body
+	>section
+		visibility hidden
+	.first-page
+		display none
 body
 	font-size 100%
 	min-width 1550px
-
+	&.active
+		.loading
+			opacity 0
+			transform scale(3);
+		section
+			visibility visible
+		.first-page
+			display block
+.loading
+	position fixed
+	bottom 0
+	left 0
+	right 0
+	top 0
+	background url(../img/loading.png) center center
+	z-index 10
+	transition 1s;
+	&.ani
+		.progress
+			.card
+				transition 5s;
+			.card
+				transition 5s;
+	.progress
+		position absolute
+		left 50%
+		top 50%
+		transform translate(-50%, -50%)
+		h3
+			font-size 30px
+			color #5f6060
+			line-height 2
+			text-align center
+		.card
+			margin-bottom 10px
+			height 30px
+			width 100%
+			background url(../img/loading-card.png) 0 top no-repeat
+			transition 0.3s
+		.animate
+			min-width 500px
+			border 1px solid #333333
+			background #101010
+			padding 2px
+			border-radius 6px
+			.bar
+				height 6px
+				width 20%
+				background #005dbb
+				border-radius 3px
+				transition 0.3s
 .first-page
 	position relative
 	.bg
@@ -78,6 +135,8 @@ body
 				height 88px
 				background url(../img/hico10.png) center center no-repeat
 				z-index 3
+				&.swiper-button-disabled
+					display none
 			.arrow-right
 				position absolute
 				top 50%
@@ -87,6 +146,8 @@ body
 				height 88px
 				background url(../img/hico11.png) center center no-repeat
 				z-index 3
+				&.swiper-button-disabled
+					display none
 			.swiper-container
 				width 100%
 				overflow visible
@@ -135,7 +196,7 @@ body
 			right 0
 			bottom 0
 			background rgba(0,0,0,0.5)
-			z-index 3
+			z-index 2
 			display none
 		.layout-box.active
 			.detalis
@@ -150,7 +211,7 @@ body
 			opacity 0
 			transition 0.3s;
 			transform translate(-50%, -100%)
-			z-index 3
+			z-index 100
 			width 500px
 			height 750px
 			box-sizing border-box
@@ -164,6 +225,8 @@ body
 				width 54px
 				height 88px
 				background url(../img/hico27.png) center center no-repeat
+				&.swiper-button-disabled
+					display none
 			.arrow-right
 				position absolute
 				top 50%
@@ -172,9 +235,10 @@ body
 				width 54px
 				height 88px
 				background url(../img/hico28.png) center center no-repeat
+				&.swiper-button-disabled
+					display none
 			.layout
 				position absolute
-				z-index 1
 				top 0
 				bottom 0
 				left 0
@@ -189,6 +253,13 @@ body
 				img
 					display block
 					width 100%
+		.layout-click-event
+			position fixed
+			top 0
+			bottom 0
+			left 0
+			right 0
+			z-index 2
 				
 	.scroll-content
 		padding 10px 0
@@ -209,6 +280,8 @@ body
 		width 54px
 		height 88px
 		background url(../img/hico10.png) center center no-repeat
+		&.swiper-button-disabled
+			display none
 	.arrow-right
 		position absolute
 		top 50%
@@ -217,6 +290,8 @@ body
 		width 54px
 		height 88px
 		background url(../img/hico11.png) center center no-repeat
+		&.swiper-button-disabled
+			display none
 	.swiper-container
 		.swiper-slide
 			position relative
@@ -228,6 +303,12 @@ body
 				left 0
 				right 0
 				bottom 0
+				.video
+					position absolute
+					top 0
+					left 0
+					right 0
+					bottom 0
 				*
 					position relative
 					box-sizing border-box
@@ -240,6 +321,10 @@ body
 					width 100%
 					height 100%
 					visibility hidden
+				video
+					display block
+					width 100%
+					height 100%
 				.w50
 					width 50%
 					height 100%
@@ -434,13 +519,14 @@ body
 				margin-top -110px
 				margin-left 449px
 				.wrap
+					width 300px
 					position relative
-					top -330px
-					padding-bottom 160px
+					top -380px
+					padding-bottom 100px
 					&:after
-						top 210px
+						top 310px
 					&:before
-						top 210px
+						top 310px
 			.four
 				margin-top -135px
 				margin-left 210px
@@ -603,3 +689,15 @@ body
 			color #fff
 			line-height 38px
 			background #fb9a1b
+
+
+.layout-zindex-99
+	position fixed
+	bottom 0
+	left 0
+	right 0
+	top 0
+	z-index 100
+	display none
+	&.active
+		display block

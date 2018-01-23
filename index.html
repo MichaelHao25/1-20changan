@@ -3,21 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,minimum-scale=0.01,maximum-scale=2"/>
 	<meta name="renderer" content="webkit">
 	<title>document</title>
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/public.css" />
-		<script src="js/fastclick.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
 	<script>
 		if ('addEventListener' in document) {
 			document.addEventListener('DOMContentLoaded', function() {
 				FastClick.attach(document.body);
 			}, false);
 		}
+
+		var loading = {
+			setValue(value){
+				$('.loading .progress .card').css('background-position', value+'% top');
+				$('.loading .progress .animate .bar').css('width', value+'%');
+			}
+		}
 	</script>
 </head>
 <body>
+	<div class="loading active">
+		<div class="progress">
+			<div class="card" style="background-position: 0 top"></div>
+			<div class="animate">
+				<div class="bar" style="width: 0"></div>
+			</div>
+			<h3>Loading</h3>
+		</div>
+	</div>
+	<script>
+		loading.setValue(10);
+	</script>
 	<section class="first-page">
 		<div class="bg" style="background-image: url(img/hico5.png);"></div>
 		<div class="layout-first wow bounceInDown" data-wow-delay="0" data-wow-duration = '1.5s'><img src="img/hico1.png" alt=""></div>
@@ -177,6 +198,10 @@
 			<p>感受生活，感受爱</p>
 		</div>
 	</section>
+
+	<script>
+		loading.setValue(20);
+	</script>
 	<section class="four-page">
 		
 		<div class="swiper-container">
@@ -197,8 +222,13 @@
 							<div class="h70 clear pt10">
 								<div class="w70 fl pr10">
 									<div class="h40">
-										<div class="auto" style="background-image: url(img/hico46.png);"></div>
-										<img src="img/hico46.png" alt="">
+										<div class="auto" style="background-image: url(img/hico46.png);">
+											<div class="video">
+												<video src="video/video2.MP4" class="video" poster="img/hico46.png" controls="" type="video/mp4"></video>
+											</div>
+										</div>
+										<!-- <img src="img/hico46.png" alt=""> -->
+
 									</div>
 									<div class="h60 pt10">
 										<div class="auto" style="background-image: url(img/hico47.png);"></div>
@@ -229,8 +259,13 @@
 								</div>
 							</div>
 							<div class="h30 pt10">
-								<div class="auto" style="background-image: url(img/hico43.png);"></div>
-								<img src="img/hico43.png" alt="">
+								<div class="auto" style="background-image: url(img/hico43.png);">
+									<div class="video">
+										<video src="video/video2.MP4" class="video" poster="img/hico43.png" controls="" type="video/mp4"></video>
+									</div>
+								</div>
+								<!-- <img src="img/hico43.png" alt=""> -->
+
 							</div>
 						</div>
 					</div>
@@ -257,8 +292,13 @@
 							<div class="clear h60 pb10">
 								<div class="w70 fl pr10">
 									<div class="h70 pb10">
-										<div class="auto" style="background-image: url(img/hico52.png);"></div>
-										<img src="img/hico52.png" alt="">
+										<div class="auto" style="background-image: url(img/hico52.png);">
+											<div class="video">
+												<video src="video/video2.MP4" class="video" poster="img/hico52.png" controls="" type="video/mp4"></video>
+											</div>
+										</div>
+										<!-- <img src="img/hico52.png" alt=""> -->
+										
 									</div>
 									<div class="h30">
 										<div class="auto" style="background-image: url(img/hico54.png);"></div>
@@ -278,8 +318,13 @@
 							</div>
 							<div class="h40 clear">
 								<div class="w60 fl pr10">
-									<div class="auto" style="background-image: url(img/hico59.png);"></div>
-									<img src="img/hico59.png" alt="">
+									<div class="auto" style="background-image: url(img/hico59.png);">
+										<div class="video">
+											<video src="video/video2.MP4" class="video" poster="img/hico59.png" controls="" type="video/mp4"></video>
+										</div>
+									</div>
+									<!-- <img src="img/hico59.png" alt=""> -->
+									
 								</div>
 								<div class="w40 fl">
 									<div class="auto" style="background-image: url(img/hico60.png);"></div>
@@ -300,28 +345,33 @@
 						<div class="w50 fl">
 							<div class="h30 clear">
 								<div class="w50 h100 fl">
-									<div class="auto" style="background-image: url(img/hico37.png);"></div>
-									<img src="img/hico37.png" alt="">
+									<div class="auto" style="background-image: url(img/hico120.png);"></div>
+									<img src="img/hico120.png" alt="">
 								</div>
 								<div class="w50 h100 pl10 fl">
-									<div class="auto" style="background-image: url(img/hico39.png);"></div>
-									<img src="img/hico39.png" alt="">
+									<div class="auto" style="background-image: url(img/hico121.png);"></div>
+									<img src="img/hico121.png" alt="">
 								</div>
 							</div>
 							<div class="h70 clear pt10">
 								<div class="w70 fl pr10">
 									<div class="h60">
-										<div class="auto" style="background-image: url(img/hico46.png);"></div>
-										<img src="img/hico46.png" alt="">
+										<div class="auto" style="background-image: url(img/hico122.png);">
+											<div class="video">
+												<video src="video/video2.MP4" class="video" poster="img/hico122.png" controls="" type="video/mp4"></video>
+											</div>
+										</div>
+										<!-- <img src="img/hico46.png" alt=""> -->
+										
 									</div>
 									<div class="h40 pt10">
-										<div class="auto" style="background-image: url(img/hico47.png);"></div>
-										<img src="img/hico47.png" alt="">
+										<div class="auto" style="background-image: url(img/hico125.png);"></div>
+										<img src="img/hico125.png" alt="">
 									</div>
 								</div>
 								<div class="w30 fl">
-									<div class="auto" style="background-image: url(img/hico45.png);"></div>
-									<img src="img/hico45.png" alt="">
+									<div class="auto" style="background-image: url(img/hico124.png);"></div>
+									<img src="img/hico124.png" alt="">
 									<div class="layout">
 										<div class="ovh h40">
 											<h3>设计源自生活态度，心中有诗手中有生活</h3>
@@ -333,8 +383,8 @@
 						</div>
 						<div class="w50 fl pl10">
 							<div class="h70">
-								<div class="auto" style="background-image: url(img/hico41.png);"></div>
-								<img src="img/hico41.png" alt="">
+								<div class="auto" style="background-image: url(img/hico129.png);"></div>
+								<img src="img/hico129.png" alt="">
 								<div class="layout">
 									<div class="ovh h40">
 										<h3>把世界放在眼里，把美放在心里</h3>
@@ -343,8 +393,13 @@
 								</div>
 							</div>
 							<div class="h30 pt10">
-								<div class="auto" style="background-image: url(img/hico43.png);"></div>
-								<img src="img/hico43.png" alt="">
+								<div class="auto" style="background-image: url(img/hico127.png);">
+									<div class="video">
+										<video src="video/video2.MP4" class="video" poster="img/hico127.png" controls="" type="video/mp4"></video>
+									</div>
+								</div>
+								<!-- <img src="img/hico43.png" alt=""> -->
+								
 							</div>
 						</div>
 					</div>
@@ -364,15 +419,25 @@
 								</div>
 							</div>
 							<div class="h40">
-								<div class="auto" style="background-image: url(img/hico64.png);"></div>
-								<img src="img/hico64.png" alt="">
+								<div class="auto" style="background-image: url(img/hico64.png);">
+									<div class="video">
+										<video src="video/video2.MP4" class="video" poster="img/hico64.png" controls="" type="video/mp4"></video>
+									</div>
+								</div>
+								<!-- <img src="img/hico64.png" alt=""> -->
+								
 							</div>
 						</div>
 						<div class="w50 fl">
 							<div class="h60 pb10 clear">
 								<div class="h50 pb10">
-									<div class="auto" style="background-image: url(img/hico66.png);"></div>
-									<img src="img/hico66.png" alt="">
+									<div class="auto" style="background-image: url(img/hico66.png);">
+										<div class="video">
+											<video src="video/video2.MP4" class="video" poster="img/hico66.png" controls="" type="video/mp4"></video>
+										</div>
+									</div>
+									<!-- <img src="img/hico66.png" alt=""> -->
+									
 								</div>
 								<div class="h50 clear">
 									<div class="w50 fl">
@@ -405,12 +470,12 @@
 					</div>
 				</div>
 				<div class="swiper-slide">
-					
+
 					<div class="layout clear">
 						<div class="fl w30 pr10">
 							<div class="h70">
-								<div class="auto" style="background-image: url(img/hico49.png);"></div>
-								<img src="img/hico49.png" alt="">
+								<div class="auto" style="background-image: url(img/hico131.png);"></div>
+								<img src="img/hico131.png" alt="">
 								<div class="layout">
 									<div class="ovh h40">
 										<h3>把世界放在眼里，把美放在心里</h3>
@@ -419,41 +484,51 @@
 								</div>
 							</div>
 							<div class="h30 pt10">
-								<div class="auto" style="background-image: url(img/hico50.png);"></div>
-								<img src="img/hico50.png" alt="">
+								<div class="auto" style="background-image: url(img/hico132.png);"></div>
+								<img src="img/hico132.png" alt="">
 							</div>
 						</div>
 						<div class="fl w70">
 							<div class="clear h60 pb10">
 								<div class="w70 fl pr10">
 									<div class="h30">
-										<div class="auto" style="background-image: url(img/hico54.png);"></div>
-										<img src="img/hico54.png" alt="">
+										<div class="auto" style="background-image: url(img/hico133.png);"></div>
+										<img src="img/hico133.png" alt="">
 									</div>
 									<div class="h70 pt10">
-										<div class="auto" style="background-image: url(img/hico52.png);"></div>
-										<img src="img/hico52.png" alt="">
+										<div class="auto" style="background-image: url(img/hico138.png);">
+											<div class="video">
+												<video src="video/video2.MP4" class="video" poster="img/hico138.png" controls="" type="video/mp4"></video>
+											</div>
+										</div>
+										<!-- <img src="img/hico52.png" alt=""> -->
+										
 									</div>
 								</div>
 								<div class="w30 fl">
 									<div class="h40 pb10">
-										<div class="auto" style="background-image: url(img/hico55.png);"></div>
-										<img src="img/hico55.png" alt="">
+										<div class="auto" style="background-image: url(img/hico134.png);"></div>
+										<img src="img/hico134.png" alt="">
 									</div>
 									<div class="h60">
-										<div class="auto" style="background-image: url(img/hico56.png);"></div>
-										<img src="img/hico56.png" alt="">
+										<div class="auto" style="background-image: url(img/hico136.png);"></div>
+										<img src="img/hico136.png" alt="">
 									</div>
 								</div>
 							</div>
 							<div class="h40 clear">
 								<div class="w60 fl pr10">
-									<div class="auto" style="background-image: url(img/hico59.png);"></div>
-									<img src="img/hico59.png" alt="">
+									<div class="auto" style="background-image: url(img/hico141.png);">
+										<div class="video">
+											<video src="video/video2.MP4" class="video" poster="img/hico141.png" controls="" type="video/mp4"></video>
+										</div>
+									</div>
+									<!-- <img src="img/hico59.png" alt=""> -->
+									
 								</div>
 								<div class="w40 fl">
-									<div class="auto" style="background-image: url(img/hico60.png);"></div>
-									<img src="img/hico60.png" alt="">
+									<div class="auto" style="background-image: url(img/hico139.png);"></div>
+									<img src="img/hico139.png" alt="">
 									<div class="layout">
 										<div class="ovh h40">
 											<h3>把世界放在眼里，把美放在心里</h3>
@@ -470,7 +545,11 @@
 		<a href="javascript:;" class="arrow-left"></a>
 		<a href="javascript:;" class="arrow-right"></a>
 	</section>
-	<section class="five-page active">
+
+	<script>
+		loading.setValue(40);
+	</script>
+	<section class="five-page">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" data-src={'img/hico76.png,img/hico76.png,img/hico76.png,img/hico76.png'}>
@@ -618,6 +697,10 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+		loading.setValue(60);
+	</script>
 	<section class="seven-page">
 		<div class="card-color-type">
 			<div class="item" data-color-url = "img/hico85.png">
@@ -653,14 +736,17 @@
 			<div class="pic fl"><img src="img/hico109.png" alt=""></div>
 		</div>
 	</section>
-	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<script>
+		loading.setValue(80);
+	</script>
+	<div class="layout-zindex-99"></div>
 	<script src="js/wow.min.js"></script>
 	<script src="js/swiper-3.3.1.jquery.min.js"></script>
 	<script>
 		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
 			new WOW().init();
 		};
-
 
 		// slidesPerView=4
 		// slidesPerGroup=4
@@ -670,7 +756,7 @@
 		// }
 		var length = $('.three-page .full-scroll .content .swiper-container .swiper-slide').length;
 		var mySwiper = new Swiper('.full-scroll .content .swiper-container',{
-			loop: true,
+			// loop: true,
 			speed:1000,
 			// onlyExternal : true,
 			slidesPerView :  4,
@@ -684,18 +770,29 @@
 					swiper.slideTo(length,0)
 				}
 			},
+			prevButton:'.full-scroll .content .arrow-left',
+			nextButton:'.full-scroll .content .arrow-right',
+
+
 
 		});  
-		$('.full-scroll .content .arrow-left').on('click', function(e){
-			e.preventDefault()
-			mySwiper.slidePrev()
-		})
-		$('.full-scroll .content .arrow-right').on('click', function(e){
-			e.preventDefault()
-			mySwiper.slideNext()
-		})
+		// $('.full-scroll .content .arrow-left').on('click', function(e){
+		// 	e.preventDefault()
+		// 	mySwiper.slidePrev()
+		// })
+		// $('.full-scroll .content .arrow-right').on('click', function(e){
+		// 	e.preventDefault()
+		// 	mySwiper.slideNext()
+		// })
 
 		$('.three-page .full-scroll .layout-box').on('click', '.close', function() {
+			$('.three-page .full-scroll .layout-box').removeClass('active five-page-layout');
+			$(this).parents('.layout-box').children().remove();
+
+
+			$('.five-page').removeClass('active');
+		});
+		$('.three-page .full-scroll .layout-box').on('click', '.layout-click-event', function() {
 			$('.three-page .full-scroll .layout-box').removeClass('active five-page-layout');
 			$(this).parents('.layout-box').children().remove();
 
@@ -710,11 +807,11 @@
 				elements += '<div class="swiper-slide"><img src="'+str[i]+'" alt=""></div>';
 			}
 			console.log(elements);
-			elements = '<div class="bg-layout"></div><div class="detalis"><div class="swiper-container"><div class="swiper-wrapper">'+elements+'</div></div><div class="layout"></div><a href="javascript:;" class="arrow-left"></a><a href="javascript:;" class="arrow-right"></a><a href="javascript:;" class="close"><img src="img/hico29.png" alt=""></a></div>'
+			elements = '<div class="bg-layout"></div><div class="detalis"><div class="swiper-container"><div class="swiper-wrapper">'+elements+'</div></div><div class="layout"></div><a href="javascript:;" class="arrow-left"></a><a href="javascript:;" class="arrow-right"></a><a href="javascript:;" class="close"><img src="img/hico29.png" alt=""></a></div><div class="layout-click-event"></div>'
 			$('.three-page .full-scroll .layout-box').html(elements);
 			new Swiper('.detalis .swiper-container',{
 				speed:1000,
-				onlyExternal : true,
+				// onlyExternal : true,
 				prevButton:'.detalis .arrow-left',
 				nextButton:'.detalis .arrow-right',
 				lazyLoading : true,
@@ -761,14 +858,25 @@
 
 		
 
-		$('.six-page .bg .card .round').hover(function() {
+		$('.six-page .bg .card .round').click(function() {
+			$(this).parent().siblings().find('.round').removeClass('active')
+			$(this).addClass('active')
+			$('.six-page .bg .card .wrap').removeClass('active');
 			$(this).siblings().addClass('active')
-		}, function() {
-			$(this).siblings().removeClass('active')
-		}).on('click', function() {
-			var index = parseInt($(this).parent().attr('data-index'))-1;
+			$('.layout-zindex-99').addClass('active');
+		});
+		$('.layout-zindex-99').on('click', function() {
+			$('.six-page .bg .card .round').removeClass('active')
+			$('.six-page .bg .card .wrap').removeClass('active');
+			$(this).removeClass('active');
+		});
+		///////////////////////////////////////////////////////////
+		// $('.six-page .bg .card .wrap').removeClass('active'); //
+		///////////////////////////////////////////////////////////
+		$('.six-page .bg .card .wow').on('click', function() {
+			// var index = parseInt($(this).parent().attr('data-index'))-1;
+			var index = parseInt($(this).attr('data-index'))-1;
 			card.slideTo(index,1000);
-			alert(index);
 		});;
 		// window.onresize=function() {
 
@@ -792,6 +900,24 @@
 			var url = $(this).attr('data-color-url');
 			$('.six-page .bg .card').css('background-image', 'url('+url+')');
 		});
+		if(parseInt($('.four-page .swiper-container .swiper-slide').width()*0.6666)-$('.four-page .swiper-container .swiper-slide').innerHeight()<10&&parseInt($('.four-page .swiper-container .swiper-slide').width()*0.6666)-$('.four-page .swiper-container .swiper-slide').innerHeight()>-10){
+			console.log(1);
+			console.log($('.four-page .swiper-container').height())
+			$('.four-page .swiper-container').height()==0&&$('.four-page .swiper-container').height(parseInt($('.four-page .swiper-container .swiper-slide').width()*0.6666)),$('.four-page .swiper-container .swiper-slide').css('height', 'auto');;
+		}else{
+			$('.four-page .swiper-container .swiper-slide').css({
+				'padding-top': '0',
+				height: parseInt($('.four-page .swiper-container .swiper-slide').width()*0.6666)
+			});
+		}
+		$('.loading').addClass('ani')
+		loading.setValue(100);
+		setTimeout(function(){
+			$('body').addClass('active');
+		},5000)
+		// setTimeout(function(){
+		// 	$('.loading').remove();
+		// },6000)
 	</script>
 </body>
 </html>
