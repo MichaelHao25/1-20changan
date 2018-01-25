@@ -27,7 +27,7 @@ body .first-page {
 }
 body {
   font-size: 100%;
-  min-width: 1550px;
+  //min-width: 1550px;
 }
 body.active .loading {
   opacity: 0;
