@@ -393,7 +393,7 @@
 									</div>
 									<div class="h40 pt10">
 										<div class="auto" style="background-image: url(img/hico125.jpg);"></div>
-										<img data-src="img/hico125.jpg" alt="">
+										<img data-src="img/hico	125.jpg" alt="">
 									</div>
 								</div>
 								<div class="w30 fl">
@@ -951,6 +951,10 @@
 				loading.setValue(current);
 				if (length-1==parseInt($(this).attr('index'))) {
 					$('body').addClass('active')
+					
+			$.each($('video'),function(index,val){
+					$(val).attr('src', $(val).attr('data-src'))
+				})
 					setTimeout(function(){
 						$('.loading').remove();
 					},2000)
